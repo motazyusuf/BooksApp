@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:book_reader/core/theme/color_palette.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 import '../../core/configurations/pages_routes.dart';
 
@@ -23,16 +24,21 @@ class _SplashViewState extends State<SplashView> {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-        color: ColorPaletteDark.secondaryPrimaryColor,
+    return AnnotatedRegion(
+      value: SystemUiOverlayStyle(
+        systemNavigationBarColor: ColorPaletteDark.secondaryPrimaryColor,
       ),
-      child: Center(
-          child: Image.asset(
-              color: Colors.white,
-              height: 150,
-              width: 150,
-              "assets/images/TempLogo.png")),
+      child: Container(
+        decoration: BoxDecoration(
+          color: ColorPaletteDark.secondaryPrimaryColor,
+        ),
+        child: Center(
+            child: Image.asset(
+                color: Colors.white,
+                height: 150,
+                width: 150,
+                "assets/images/TempLogo.png")),
+      ),
     );
   }
 }
