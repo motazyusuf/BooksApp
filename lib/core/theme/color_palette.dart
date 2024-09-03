@@ -6,4 +6,5 @@ class ColorPaletteDark{
   static Color secondaryPrimaryColor = const Color(0xffa11b25);
   static Color secondaryAccentColor = const Color(0xFFFFD600);
   static Color bodyTextColor = Colors.white;
+  static Color bottomNavBarColor = Color(0xFF1E1C1C);
 }
