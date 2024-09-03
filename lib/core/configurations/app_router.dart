@@ -1,7 +1,7 @@
 import 'package:book_reader/core/configurations/pages_routes.dart';
 import 'package:flutter/material.dart';
 
-import '../../views/layout/layout_view.dart';
+import '../../views/main_layout/layout_view.dart';
 import '../../views/splash/splash_view.dart';
 
 class AppRouter {
